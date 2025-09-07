@@ -4,6 +4,12 @@ public class Album extends LibraryItem {
     private String artist;
     private int tracks;
 
+    public Album(String name, String artist, int year, int tracks) {
+        super(name, year);
+        this.artist = artist;
+        this.year = year;
+    }
+
     public String getArtist() {
         return artist;
     }
